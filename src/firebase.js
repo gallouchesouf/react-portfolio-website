@@ -5,12 +5,13 @@ import { getStorage } from 'firebase/storage';
 import { getFirestore } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: process.env.REACT_APP_apiKey || 'test',
+  authDomain: process.env.REACT_APP_authDomain || 'test',
+  projectId: process.env.REACT_APP_projectId || 'test',
+  storageBucket: process.env.REACT_APP_storageBucket || 'test',
+  messagingSenderId: process.env.REACT_APP_messagingSenderId || 'test',
+  appId: process.env.REACT_APP_appId || 'test',
+  measurementId:process.env.REACT_APP_measurementId || 'test'
 };
 
 
